@@ -1,0 +1,16 @@
+﻿@page "/"
+@model RabbitMQClientExampleModel
+@{
+    ViewData["Title"] = "RabbitMQ.Client Example";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="d-flex justify-content-center align-items-center" style="height: 60vh;">
+    <form method="post" class="w-50">
+        <div class="mb-3">
+            <label for="Message" class="form-label">Gönderilecek Mesaj</label>
+            <input type="text" class="form-control" id="Message" name="Message" value="@Model.Message" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Gönder</button>
+    </form>
+</div>
